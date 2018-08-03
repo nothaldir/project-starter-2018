@@ -1,0 +1,69 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "custom playground",
+  "main": "index.js",
+  "scripts": {
+    "clean-build": "npm run remove-build && mkdir build && cd build && mkdir assets && cd assets && mkdir icons",
+    "remove-build": "rimraf ./build",
+    "start": "npm run clean-build && npm run build && npm-run-all --parallel watch:views watch:scripts watch:views watch:styles watch:icons browser-sync",
+    "build": "npm-run-all clean-build build:views build:scripts build:node-sass build:postcss build:icons",
+    "build:views": "cp -R ./app/views/* ./build",
+    "build:scripts": "rollup -c",
+    "build:node-sass": "node-sass app/styles/index.scss -o build/assets/",
+    "build:postcss": "postcss build/assets/index.css --use postcss-cssnext -r",
+    "build:styles": "npm-run-all build:node-sass build:postcss",
+    "build:icons": "svg-sprite-generate -d app/assets/icons -o build/assets/icons/sprite.svg",
+    "watch:views": "chokidar 'app/views/**/*.html' -c 'npm run build:views'",
+    "watch:scripts": "chokidar 'app/scripts/**/*.js' -c 'npm run build:scripts'",
+    "watch:styles": "chokidar 'app/styles/**/*.scss' -c 'npm run build:styles'",
+    "watch:icons": "chokidar 'app/assets/icons' -c 'npm run build:icons'",
+    "browser-sync": "browser-sync start --config bs-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waitandseeagency/wasa-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "wasa"
+  ],
+  "author": "Alex Berneau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waitandseeagency/wasa-boilerplate/issues"
+  },
+  "homepage": "https://github.com/waitandseeagency/wasa-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.6",
+    "chokidar-cli": "^1.2.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.13.0",
+    "node-sass": "^4.9.2",
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.1.0",
+    "pug-cli": "https://github.com/pugjs/pug-cli#master",
+    "rollup": "^0.63.5",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "svg-sprite-generator": "0.0.7"
+  },
+  "dependencies": {
+    "progressbar.js": "^1.0.1",
+    "the-answer": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "sasslintConfig": ".sass-lint.yml"
+}
