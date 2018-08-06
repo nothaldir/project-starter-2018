@@ -1,4 +1,4 @@
-# Ignore config files
+# Ignore modules
 node_modules/*
 
 # Ignore built files

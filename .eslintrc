@@ -4,7 +4,7 @@
     "es6": true
   },
   "extends": [
-    "eslint-config-airbnb-base"
+    "airbnb-base"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -18,7 +18,7 @@
   ],
   "rules": {
     "strict": 0,
-    "semi": 0,
+    "semi": 1,
     "no-console": 1
   }
 }

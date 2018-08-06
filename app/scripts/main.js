@@ -1,5 +1,5 @@
 import answer from 'the-answer';
-import App from './app'
+import App from './app';
 
-App()
+App();
 console.log(`the answer is ${answer}`);
