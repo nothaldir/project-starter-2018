@@ -1,8 +1,17 @@
+// .babelrc
 {
   "presets": [
     ["env", {
-      "modules": false
+      "modules": false,
+      "targets": {
+        "browsers": [
+          "> 0.5%",
+          "last 2 versions"
+        ]
+      }
     }]
   ],
-  "plugins": ["external-helpers"]
+  "plugins": [
+    "external-helpers"
+  ]
 }

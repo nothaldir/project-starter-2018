@@ -64,5 +64,9 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "sasslintConfig": ".sass-lint.yml"
+  "sasslintConfig": ".sass-lint.yml",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions"
+  ]
 }
