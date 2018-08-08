@@ -1,13 +1,15 @@
 {
-  "dest": "build",
   "shape": {
-      "transform": ["svgo"]
+    "transform": false
   },
   "mode": {
-      "symbol": {
-          "render": {
-              "css": "false"
-          }
+    "symbol": {
+      "dest": "build/assets/icons",
+      "render": {
+        "css": {
+          "dest": "_sprite.css"
+        }
       }
+    }
   }
 }
