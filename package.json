@@ -2,7 +2,6 @@
   "name": "playground",
   "version": "1.0.0",
   "description": "custom playground",
-  "main": "index.js",
   "scripts": {
     "clean-build": "npm run remove-build && mkdir build && cd build && mkdir assets && cd assets && mkdir icons",
     "remove-build": "rimraf ./build",
@@ -20,20 +19,7 @@
     "watch:icons": "chokidar 'app/assets/icons' -c 'npm run build:icons'",
     "browser-sync": "browser-sync start --config bs-config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/waitandseeagency/wasa-boilerplate.git"
-  },
-  "keywords": [
-    "boilerplate",
-    "wasa"
-  ],
   "author": "Alex Berneau",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/waitandseeagency/wasa-boilerplate/issues"
-  },
-  "homepage": "https://github.com/waitandseeagency/wasa-boilerplate#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
