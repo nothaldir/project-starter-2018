@@ -12,7 +12,7 @@
     "build:node-sass": "node-sass app/styles/index.scss -o build/assets/",
     "build:postcss": "postcss build/assets/index.css --use postcss-cssnext -r",
     "build:styles": "npm-run-all build:node-sass build:postcss",
-    "build:icons": "svg-sprite-generate -d app/assets/icons -o build/assets/icons/sprite.svg",
+    "build:icons": "svg-sprite --config svg-sprite.json app/assets/icons/*.svg",
     "watch:views": "chokidar 'app/views/**/*.html' -c 'npm run build:views'",
     "watch:scripts": "chokidar 'app/scripts/**/*.js' -c 'npm run build:scripts'",
     "watch:styles": "chokidar 'app/styles/**/*.scss' -c 'npm run build:styles'",
@@ -43,7 +43,7 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
     "stylelint-selector-bem-pattern": "^2.0.0",
-    "svg-sprite-generator": "0.0.7"
+    "svg-sprite": "^1.4.0"
   },
   "dependencies": {
     "the-answer": "^1.0.0"

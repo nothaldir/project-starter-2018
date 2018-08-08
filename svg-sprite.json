@@ -1,0 +1,13 @@
+{
+  "dest": "build",
+  "shape": {
+      "transform": ["svgo"]
+  },
+  "mode": {
+      "symbol": {
+          "render": {
+              "css": "false"
+          }
+      }
+  }
+}
