@@ -54,6 +54,9 @@
     "rollup-plugin-commonjs": "^9.1.4",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^4.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
+    "stylelint-selector-bem-pattern": "^2.0.0",
     "svg-sprite-generator": "0.0.7"
   },
   "dependencies": {
@@ -64,7 +67,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "sasslintConfig": ".sass-lint.yml",
   "browserslist": [
     "> 0.5%",
     "last 2 versions"

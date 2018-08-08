@@ -1,0 +1,11 @@
+.ComponentName {
+  color: #000;
+
+  &-descendentName {
+    color: #000;
+
+    &--modifierName {
+      color: #000;
+    }
+  }
+}
