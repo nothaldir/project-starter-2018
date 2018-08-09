@@ -13,7 +13,7 @@
     "build:postcss": "postcss build/assets/index.css --use postcss-cssnext -r",
     "build:styles": "npm-run-all build:node-sass build:postcss",
     "build:icons": "svg-sprite --config svg-sprite.json app/assets/icons/*.svg",
-    "watch:views": "chokidar 'app/views/**/*.html' -c 'npm run build:views'",
+    "watch:views": "chokidar 'app/views/**/*.php' -c 'npm run build:views'",
     "watch:scripts": "chokidar 'app/scripts/**/*.js' -c 'npm run build:scripts'",
     "watch:styles": "chokidar 'app/styles/**/*.scss' -c 'npm run build:styles'",
     "watch:icons": "chokidar 'app/assets/icons' -c 'npm run build:icons'",

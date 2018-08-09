@@ -26,11 +26,10 @@ module.exports = {
     "watchOptions": {
         "ignoreInitial": true
     },
-    "server": {
-      baseDir: "build",
-      directory: false
+    "server": false,
+    "proxy": {
+      target: "localhost/playground/build"
     },
-    "proxy": false,
     "port": 3000,
     "middleware": false,
     "serveStatic": [],
