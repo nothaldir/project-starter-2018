@@ -28,9 +28,8 @@ module.exports = {
     },
     "server": false,
     "proxy": {
-      target: "localhost/playground/build"
+      target: "localhost/playground/build/"
     },
-    "port": 3000,
     "middleware": false,
     "serveStatic": [],
     "ghostMode": {
