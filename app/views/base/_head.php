@@ -8,5 +8,4 @@
   <link rel="stylesheet" href="assets/icons/_sprite.css">
   <link rel="stylesheet" href="assets/index.css">
 </head>
-<body>
-<?php include("../layout/_header.php"); ?>
+<body class="<?php echo $page; ?>">

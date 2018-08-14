@@ -1,10 +1,14 @@
-<?php include("base/_head.php"); ?>
+<?php $page = 'homepage'; ?>
+<?php require("base/_head.php"); ?>
+<?php include("layout/_header.php"); ?>
 
-<div class="helloworld">
+<div class="hello">
   hello world
 </div>
+
 <svg class="svg-facebook-dims">
   <use xlink:href="assets/icons/svg/sprite.css.svg#facebook"></use>
 </svg>
 
-<?php include("base/_foot.php"); ?>
+<?php include("layout/_footer.php"); ?>
+<?php require("base/_foot.php"); ?>
