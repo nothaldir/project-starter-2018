@@ -1,4 +1,5 @@
 import answer from 'the-answer';
+// import slick from 'slick-carousel';
 import App from './app';
 
 App();
