@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i');
-$raleway:            'Raleway', sans-serif;
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+$main-font: "Open Sans", sans-serif;
 
 // Base
-$font-size-root:     62.5%;       // html tag to make 1em equal 10px
-$font-size-base:     1.6rem;      // body tag
-$font-size-base-m:   1.2rem;      // body tag mobile
-$font-family-base:   $raleway;    // add your custom font-face here
-$border-radius-base: .3rem;
-$line-height-base:   1.4;
+$font-size-root:   62.5%;       // html tag to make 1em equal 10px
+$font-size-base:   1.8rem;      // body tag
+$font-size-base-m: 1.6rem;      // body tag mobile
+$font-family-base: $main-font;  // add your custom font-face here
 
 // Colors
 $white: #fff;
 $black: #000;
+$primary-color: #00aeef;
 
-// Media queries
-$mq-s:               414px;
-$mq-t-max:           767px;
-$mq-t:               768px;
-$mq-m-max:           1023px;
-$mq-m:               1024px;
-$mq-ml:              1280px;
-$mq-l:               1400px;
+// Breakpoints & Media Queries
+$breakpoints: (
+  xs: 414px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1440px
+);

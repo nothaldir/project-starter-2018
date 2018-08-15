@@ -2,7 +2,7 @@
 <?php require("base/_head.php"); ?>
 <?php include("layout/_header.php"); ?>
 
-<div class="hello">
+<div class="hello ComponentName">
   hello world
 </div>
 
