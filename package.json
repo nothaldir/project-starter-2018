@@ -9,7 +9,7 @@
     "build": "npm-run-all clean-build build:views build:scripts build:node-sass build:postcss build:icons",
     "build:views": "cp -R ./app/views/* ./build",
     "build:scripts": "rollup -c",
-    "build:node-sass": "node-sass app/styles/index.scss -o build/assets/",
+    "build:node-sass": "node-sass app/styles/index.scss --source-map true -o build/assets/",
     "build:postcss": "postcss build/assets/index.css --use postcss-cssnext -r",
     "build:styles": "npm-run-all build:node-sass build:postcss",
     "build:icons": "svg-sprite --config svg-sprite.json app/assets/icons/*.svg",

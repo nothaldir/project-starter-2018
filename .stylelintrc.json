@@ -11,6 +11,8 @@
     },
     "plugin/declaration-block-no-ignored-properties": true,
     "string-quotes": "double",
-    "declaration-no-important": true
+    "declaration-no-important": true,
+    "number-leading-zero": "never",
+    "at-rule-no-unknown": null
   }
 }
