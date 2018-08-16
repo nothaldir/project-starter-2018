@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "custom playground",
   "scripts": {
-    "clean-build": "npm run remove-build && mkdir build && cd build && mkdir assets && cd assets && mkdir icons",
+    "clean-build": "npm run remove-build && mkdir build",
     "remove-build": "rimraf ./build",
     "start": "npm run clean-build && npm run build && npm-run-all --parallel watch:views watch:scripts watch:views watch:styles watch:icons browser-sync",
     "build": "npm-run-all clean-build build:views build:scripts build:styles build:icons",
