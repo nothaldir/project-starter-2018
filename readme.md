@@ -1,4 +1,4 @@
-# Mo Works starter
+# Project starter
 
 A front-end boilerplate that's easy-to-use and ready-to-go.
 
@@ -21,9 +21,7 @@ A front-end boilerplate that's easy-to-use and ready-to-go.
 - node-js >= 6.4.0
 
 ## Installation
-To automate the installation process, we **recommend** that you use the <a href="">wasa-cli</a>, a CLI tool that can initialize ready-to-go new projects based on this boilerplate in no time.
-
-Otherwise, follow these instructions:
+To install, follow these instructions:
 - `npm install` to install the dependencies.
 - `npm install -g commitizen` to globally install Commitizen.
 
