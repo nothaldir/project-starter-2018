@@ -9,6 +9,7 @@ body {
   font-family: $font-family-base;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
   scroll-behavior: smooth;
 
   @include respond-above(md) {

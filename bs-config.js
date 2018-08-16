@@ -13,15 +13,10 @@
  |
  */
 module.exports = {
-    "ui": {
-        "port": 3001,
-        "weinre": {
-            "port": 8080
-        }
-    },
     "files": "build",
     "watchEvents": [
-        "change"
+        "change",
+        "add"
     ],
     "watchOptions": {
         "ignoreInitial": true

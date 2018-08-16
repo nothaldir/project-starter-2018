@@ -9,10 +9,11 @@
 @import "base/grid";
 
 // 3. Components
-@import "components/ComponentName";
+@import "components/FirstComponent";
 
 // 4. Layout-related sections
-// @import "layout/Header";
+@import "layout/Header";
+@import "layout/Footer";
 
 // 5. Page-specific styles
-// @import "pages/page-home";
+// @import "pages/homePage";
