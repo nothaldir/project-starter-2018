@@ -25,31 +25,14 @@ module.exports = {
     "proxy": {
       target: "localhost/playground/build/"
     },
-    "middleware": false,
-    "serveStatic": [],
-    "ghostMode": {
-        "clicks": true,
-        "scroll": true,
-        "location": true,
-        "forms": {
-            "submit": true,
-            "inputs": true,
-            "toggles": true
-        }
-    },
+    "ghostMode": false,
     "logLevel": "info",
     "logPrefix": "BS",
     "logConnections": false,
-    "logFileChanges": true,
-    "logSnippet": true,
-    "rewriteRules": [],
     "open": "local",
-    "browser": "default",
-    "cors": false,
-    "xip": false,
+    "notify": true,
     "hostnameSuffix": false,
     "reloadOnRestart": false,
-    "notify": true,
     "scrollProportionally": true,
     "scrollThrottle": 0,
     "scrollRestoreTechnique": "window.name",
@@ -61,7 +44,6 @@ module.exports = {
     "plugins": [],
     "injectChanges": true,
     "startPath": null,
-    "minify": true,
     "host": null,
     "localOnly": false,
     "codeSync": true,
