@@ -6,3 +6,4 @@ build/*
 
 # Ignore config files
 bs-config.js
+postcss.config.js
