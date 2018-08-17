@@ -1,5 +1,5 @@
 {
-  "name": "Project Starter 2018",
+  "name": "project-starter-2018",
   "version": "1.0.0",
   "description": "Custom front-end project starter using Rollup & PostCSS.",
   "scripts": {
