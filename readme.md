@@ -16,7 +16,7 @@ A front-end boilerplate that's easy-to-use and ready-to-go.
 <!-- /TOC -->
 
 ## Requirements
-- node-js >= 6.4.0
+- node-js >= 6.9
 
 ## Installation
 To install, follow these instructions:
