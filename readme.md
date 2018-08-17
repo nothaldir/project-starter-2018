@@ -1,5 +1,7 @@
 # Project Starter - 2018
 
+[![Build Status](https://travis-ci.org/nothaldir/project-starter-2018.svg?branch=master)](https://travis-ci.org/nothaldir/project-starter-2018)
+
 A front-end boilerplate that's easy-to-use and ready-to-go.
 
 <!-- TOC -->
