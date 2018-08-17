@@ -1,7 +1,7 @@
 {
-  "name": "playground",
+  "name": "Project Starter 2018",
   "version": "1.0.0",
-  "description": "custom playground",
+  "description": "Custom front-end project starter using Rollup & PostCSS.",
   "scripts": {
     "clean-build": "npm run remove-build && mkdir build",
     "remove-build": "rimraf ./build",

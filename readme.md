@@ -1,4 +1,4 @@
-# Project starter
+# Project Starter - 2018
 
 A front-end boilerplate that's easy-to-use and ready-to-go.
 

@@ -6,6 +6,8 @@
   Hello World.
 </div>
 
+<img src="assets/images/meme.png" alt="random test meme">
+
 <svg class="svg-facebook-dims">
   <use xlink:href="assets/icons/svg/sprite.css.svg#facebook"></use>
 </svg>
