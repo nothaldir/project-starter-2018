@@ -23,7 +23,7 @@ module.exports = {
     },
     "server": false,
     "proxy": {
-      target: "localhost/playground/build/"
+      target: "localhost/project-starter-2018/build/"
     },
     "ghostMode": false,
     "logLevel": "info",
