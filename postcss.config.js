@@ -4,6 +4,8 @@ module.exports = {
     require('@csstools/postcss-sass')({
       outputStyle: 'compressed'
     }),
-    require('autoprefixer'),
+    require('autoprefixer')({
+      grid: true
+    }),
   ],
 };

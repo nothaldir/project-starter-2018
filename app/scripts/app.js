@@ -1,3 +1,3 @@
 export default () => {
-  document.querySelector('.MyFirstComponent').classList.add('text');
+  document.querySelector('.FirstComponent').classList.add('text');
 };
