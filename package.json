@@ -37,6 +37,7 @@
     "imagemin-cli": "^3.0.0",
     "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.1.0",
+    "postcss-easy-import": "^3.0.0",
     "postcss-scss": "^2.0.0",
     "rollup": "^0.63.5",
     "rollup-plugin-babel": "^3.0.7",
@@ -49,6 +50,7 @@
     "svg-sprite": "^1.4.0"
   },
   "dependencies": {
+    "owl.carousel": "^2.3.4",
     "the-answer": "^1.0.0"
   },
   "config": {

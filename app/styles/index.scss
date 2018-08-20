@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+// 0. Vendors (you can import from node_modules)
+// @import "vendor/dist/assets/vendor.min.css";
+
 // 1. Configuration and helpers
 @import "abstracts/variables";
 @import "abstracts/helpers";
