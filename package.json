@@ -50,7 +50,6 @@
     "svg-sprite": "^1.4.0"
   },
   "dependencies": {
-    "owl.carousel": "^2.3.4",
     "the-answer": "^1.0.0"
   },
   "config": {
