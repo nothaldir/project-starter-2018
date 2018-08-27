@@ -2,6 +2,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import { uglify } from 'rollup-plugin-uglify';
+import notify from 'rollup-plugin-notify';
 
 export default {
   input: 'app/scripts/main.js',
@@ -12,6 +13,7 @@ export default {
     sourcemap: true,
   },
   plugins: [
+    notify(),
     resolve(),
     commonjs(),
     babel({
