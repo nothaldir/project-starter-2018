@@ -2,6 +2,11 @@
   "name": "project-starter-2018",
   "version": "1.0.0",
   "description": "Custom front-end project starter using Rollup & PostCSS.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nothaldir/project-starter-2018.git"
+  },
+  "license": "MIT",
   "scripts": {
     "clean-build": "npm run remove-build && mkdir build",
     "remove-build": "rimraf ./build",
@@ -30,7 +35,7 @@
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.6",
     "chokidar-cli": "^1.2.0",
-    "cz-emoji": "^1.1.2",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.13.0",
@@ -55,7 +60,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-emoji"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "browserslist": [
