@@ -7,7 +7,7 @@
   "rules": {
     "plugin/selector-bem-pattern": {
       "preset": "suit",
-      "implicitComponents": "app/styles/components/**/*.scss"
+      "implicitComponents": ["app/styles/components/**/*.scss", "app/styles/layout/**/*.scss"]
     },
     "plugin/declaration-block-no-ignored-properties": true,
     "string-quotes": "double",

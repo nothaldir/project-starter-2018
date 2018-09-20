@@ -4,15 +4,28 @@ html {
 
 body {
   background: $white;
-  color: $black;
+  color: $text-color;
   font-size: $font-size-base-m;
   font-family: $font-family-base;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   scroll-behavior: smooth;
+  word-wrap: break-word;
 
   @include respond-above(md) {
     font-size: $font-size-base;
   }
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: $text-color;
+}
+
+ul {
+  list-style-position: inside;
 }
